@@ -1,15 +1,24 @@
-/* eslint-env node */
-require('@rushstack/eslint-patch/modern-module-resolution')
-
 module.exports = {
+  extends: ['alloy', 'alloy/vue', 'alloy/typescript', 'prettier'],
+  plugins: ['prettier'],
   root: true,
-  'extends': [
-    'plugin:vue/vue3-essential',
-    'eslint:recommended',
-    '@vue/eslint-config-typescript',
-    '@vue/eslint-config-prettier'
-  ],
+  parser: 'vue-eslint-parser',
   parserOptions: {
-    ecmaVersion: 'latest'
-  }
-}
+    parser: {
+      sourceType: 'module',
+      js: '@babel/eslint-parser',
+      jsx: '@babel/eslint-parser',
+      ts: '@typescript-eslint/parser',
+      tsx: '@typescript-eslint/parser',
+    },
+  },
+  env: {
+    browser: true,
+    node: true,
+  },
+  globals: {},
+  rules: {
+    'prettier/prettier': 'error',
+    '@typescript-eslint/prefer-optional-chain': 'off',
+  },
+};
