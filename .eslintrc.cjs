@@ -10,6 +10,7 @@ module.exports = {
       jsx: '@babel/eslint-parser',
       ts: '@typescript-eslint/parser',
       tsx: '@typescript-eslint/parser',
+      project: './vite.config.ts',
     },
   },
   env: {
