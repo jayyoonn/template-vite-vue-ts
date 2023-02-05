@@ -3,7 +3,7 @@ import { ref } from 'vue';
 defineProps<{
   msg: string;
 }>();
-const msg = ref('hello');
+const msg = ref(import.meta.env.VITE_APP_TITLE);
 </script>
 
 <template>

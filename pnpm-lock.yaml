@@ -22,6 +22,7 @@ specifiers:
   npm-run-all: ^4.1.5
   pinia: ^2.0.28
   prettier: ^2.7.1
+  sass: ^1.58.0
   typescript: ~4.7.4
   vite: ^4.0.0
   vite-plugin-checker: ^0.5.5
@@ -58,7 +59,7 @@ devDependencies:
   npm-run-all: 4.1.5
   prettier: 2.8.3
   typescript: 4.7.4
-  vite: 4.0.4_@types+node@18.11.18
+  vite: 4.0.4_f5vcjb3akvjdur4ffzogu2hewu
   vite-plugin-checker: 0.5.5_7chsw6ynvlm2fpc7tpeiln5trq
   vite-plugin-eslint: 1.8.1_eslint@8.33.0+vite@4.0.4
   vue-eslint-parser: 9.1.0_eslint@8.33.0
@@ -1052,7 +1053,7 @@ packages:
       '@babel/core': 7.20.12
       '@babel/plugin-transform-typescript': 7.20.13_@babel+core@7.20.12
       '@vue/babel-plugin-jsx': 1.1.1_@babel+core@7.20.12
-      vite: 4.0.4_@types+node@18.11.18
+      vite: 4.0.4_f5vcjb3akvjdur4ffzogu2hewu
       vue: 3.2.46
     transitivePeerDependencies:
       - supports-color
@@ -1065,7 +1066,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.0.4_@types+node@18.11.18
+      vite: 4.0.4_f5vcjb3akvjdur4ffzogu2hewu
       vue: 3.2.46
     dev: true
 
@@ -2404,6 +2405,10 @@ packages:
     engines: {node: '>= 4'}
     dev: true
 
+  /immutable/4.2.3:
+    resolution: {integrity: sha512-IHpmvaOIX4VLJwPOuQr1NpeBr2ZG6vpIj3blsLVxXRWJscLioaJRStqC+NcBsLeCDsnGlPpXd5/WZmnE7MbsKA==}
+    dev: true
+
   /import-fresh/3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
     engines: {node: '>=6'}
@@ -3440,6 +3445,16 @@ packages:
       is-regex: 1.1.4
     dev: true
 
+  /sass/1.58.0:
+    resolution: {integrity: sha512-PiMJcP33DdKtZ/1jSjjqVIKihoDc6yWmYr9K/4r3fVVIEDAluD0q7XZiRKrNJcPK3qkLRF/79DND1H5q1LBjgg==}
+    engines: {node: '>=12.0.0'}
+    hasBin: true
+    dependencies:
+      chokidar: 3.5.3
+      immutable: 4.2.3
+      source-map-js: 1.0.2
+    dev: true
+
   /semver/5.7.1:
     resolution: {integrity: sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==}
     hasBin: true
@@ -3911,7 +3926,7 @@ packages:
       strip-ansi: 6.0.1
       tiny-invariant: 1.3.1
       typescript: 4.7.4
-      vite: 4.0.4_@types+node@18.11.18
+      vite: 4.0.4_f5vcjb3akvjdur4ffzogu2hewu
       vscode-languageclient: 7.0.0
       vscode-languageserver: 7.0.0
       vscode-languageserver-textdocument: 1.0.8
@@ -3929,10 +3944,10 @@ packages:
       '@types/eslint': 8.4.10
       eslint: 8.33.0
       rollup: 2.79.1
-      vite: 4.0.4_@types+node@18.11.18
+      vite: 4.0.4_f5vcjb3akvjdur4ffzogu2hewu
     dev: true
 
-  /vite/4.0.4_@types+node@18.11.18:
+  /vite/4.0.4_f5vcjb3akvjdur4ffzogu2hewu:
     resolution: {integrity: sha512-xevPU7M8FU0i/80DMR+YhgrzR5KS2ORy1B4xcX/cXLsvnUWvfHuqMmVU6N0YiJ4JWGRJJsLCgjEzKjG9/GKoSw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -3962,6 +3977,7 @@ packages:
       postcss: 8.4.21
       resolve: 1.22.1
       rollup: 3.12.1
+      sass: 1.58.0
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
