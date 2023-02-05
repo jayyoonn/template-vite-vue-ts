@@ -1,7 +1,7 @@
 {
-  "*.js": ["eslint --fix", "git add"],
-  "*.jsx": ["eslint --fix", "git add"],
-  "*.ts": ["eslint --fix", "git add"],
-  "*.tsx": ["eslint --fix", "git add"],
-  "*.vue": ["eslint --fix", "git add"]
+  "*.js": ["eslint --fix"],
+  "*.jsx": ["eslint --fix"],
+  "*.ts": ["eslint --fix"],
+  "*.tsx": ["eslint --fix"],
+  "*.vue": ["eslint --fix"]
 }
