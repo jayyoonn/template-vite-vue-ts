@@ -19,6 +19,7 @@ module.exports = {
   },
   globals: {},
   rules: {
+    'no-undef': 'off',
     'prettier/prettier': 'error',
     '@typescript-eslint/prefer-optional-chain': 'off',
   },

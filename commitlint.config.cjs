@@ -16,7 +16,7 @@ module.exports = {
       footerPrefixesSelect: '选择关联issue前缀（可选）:',
       customFooterPrefix: '输入自定义issue前缀 :',
       footer: '列举关联issue (可选) 例如: #31, #I3244 :\n',
-      confirmCommit: '是否提交或修改commit ?'
+      confirmCommit: '是否提交或修改commit ?',
     },
     types: [
       { value: 'feat', name: 'feat:     新增功能 | A new feature' },
@@ -49,7 +49,7 @@ module.exports = {
     issuePrefixes: [
       // 如果使用 gitee 作为开发管理
       { value: 'link', name: 'link:     链接 ISSUES 进行中' },
-      { value: 'closed', name: 'closed:   标记 ISSUES 已完成' }
+      { value: 'closed', name: 'closed:   标记 ISSUES 已完成' },
     ],
     customIssuePrefixAlign: 'top',
     emptyIssuePrefixAlias: 'skip',
@@ -64,6 +64,6 @@ module.exports = {
     defaultBody: '',
     defaultIssues: '',
     defaultScope: '',
-    defaultSubject: ''
-  }
-}
+    defaultSubject: '',
+  },
+};

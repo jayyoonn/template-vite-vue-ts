@@ -20,7 +20,8 @@ const msg = ref(import.meta.env.VITE_APP_TITLE);
 <style scoped>
 h1 {
   font-weight: 500;
-  font-size: 2.6rem;
+  /* font-size: 2.6rem; */
+  font-size: 30px;
   top: -10px;
 }
 
